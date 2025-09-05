@@ -104,6 +104,7 @@
 		    position: map.getCenter() 
 		}); 
 		marker.setMap(map);
+		
 	</script>
 </body>
 </html>
