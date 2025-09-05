@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="ko">
+  	<head>
+    	<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<meta property="og:image" content="https://www.grintrader.com/img/kiritree/kiri_thumbnail.png">
+    	<title>1년에 최대 6m이상 성장하는 초고속 수목, 키리나무</title>
+    	<link rel="icon" href="img/favicon.png" />
+    	<script src="https://cdn.tailwindcss.com"></script>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    	<script>
+      		tailwind.config = {
+        		theme: {
+          			extend: {
+            			colors: {
+              				primary: "#ffffff", // 주 배경을 흰색으로 변경
+              				accent: "#4CAF50", // 강조 색상 (밝은 녹색)
+              				dark: "#2E7D32", // 진한 녹색
+              				light: "#E8F5E9", // 아주 연한 녹색 (하이라이트용)
+            			},
+          			},
+        		},
+      		};
+    </script>
+    <style>
+    	@font-face { font-family: "Pretendard-Regular"; src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff"); font-weight: 400; font-style: normal; }
+		body { font-family: "Pretendard-Regular"; }
+		.hero-image { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("img/kiritree/v02.jpg"); background-size: cover; background-position: center; }
+		.feature-icon { font-size: 2.5rem; color: #2e7d32; }
+		.tree-card { transition: all 0.3s ease; border: 1px solid #e5e7eb; }
+		.tree-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); border-color: #4caf50; }
+		.highlight-box { background-color: #e8f5e9; border-left: 4px solid #4caf50; }
+		.btn-primary { background-color: #4caf50; color: white; }
+		.btn-primary:hover { background-color: #2e7d32; }
+		.btn-secondary { background-color: transparent; border: 1px solid #fff; color: white; }
+		.btn-secondary:hover { background-color: rgba(0, 0, 0, 0.1); }
+		.btn-kakao { background-color: #FAE100; color: #3C1E1E; }
+		.btn-kakao:hover { background-color: #ffe714; }
+		.gallery-image { transition: all 0.3s ease; cursor: pointer; }
+		.gallery-image:hover { transform: scale(1.03); }
+        .slider-container {
+            perspective: 1000px;
+        }
+        .slider-item {
+            transition: all 0.5s ease;
+            transform-style: preserve-3d;
+        }
+        .slider-item:hover {
+            transform: scale(1.05) rotateY(10deg);
+            z-index: 10;
+        }
+        .slider-item.active {
+          
+            z-index: 5;
+        }
+        .video-container {
+            transition: all 0.5s ease;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            position: relative;
+        }
+        .video-container.show {
+            opacity: 1;
+            height: auto;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+        .slider-nav {
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+        .thumbnail {
+            transition: all 0.3s ease;
+        }
+        .thumbnail:hover {
+            filter: brightness(1.1);
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 20;
+            background: rgba(0, 0, 0, 0.7);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .close-btn:hover {
+            background: rgba(255, 0, 0, 0.7);
+            transform: scale(1.1);
+        }
+        @media (min-width: 768px) {
+            .slider-item {
+                width: calc(25% - 0.75rem); /* 4 items per row */
+            }
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #e5e7eb;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #10b981, #3b82f6);
+            transition: width 0.5s ease;
+        }
+        
+        .highlight-row {
+            animation: highlight 2s ease;
+        }
+        
+        @keyframes highlight {
+            0% { background-color: rgba(0, 0, 0, 0.1); }
+            100% { background-color: transparent; }
+        }
+        
+        .carbon-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    </style>
+  	</head>
+	<body class="bg-primary">
+	<nav class="bg-white shadow-lg fixed top-0 left-0 w-full z-10">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="flex justify-between items-center h-20">
+				<div class="flex items-center">
+					<a href="#" class="flex items-center text-xl font-bold">키리나무 : 빠르게 자라는 수목</a>
+				</div>
+				<div class="hidden md:block">
+					<div class="ml-10 flex items-baseline space-x-8">
+						<a href="#about"
+							class="nav-link text-gray-800 hover:text-[#4CAF50] px-3 py-2 text-base font-medium duration-200">키리나무 소개</a>
+						<a href="#video"
+							class="nav-link text-gray-800 hover:text-[#4CAF50] px-3 py-2 text-base font-medium duration-200">영상자료</a>
+						<a href="#features"
+							class="nav-link text-gray-800 hover:text-[#4CAF50] px-3 py-2 text-base font-medium duration-200">키리나무 특징</a>
+						<a href="#gallery"
+							class="nav-link text-gray-800 hover:text-[#4CAF50] px-3 py-2 text-base font-medium duration-200">키리나무 이미지</a>
+						<!-- <a href="#contact"
+							class="nav-link text-gray-800 hover:text-[#4CAF50] px-3 py-2 text-base font-medium duration-200">문의하기</a> -->
+					</div>
+				</div>
+				<div class="md:hidden">
+					<button id="mobile-menu-button"
+						class="text-gray-800 hover:text-[#4CAF50] focus:outline-none">
+						<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+							stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+								stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile menu -->
+		<div id="mobile-menu" class="md:hidden hidden bg-white">
+			<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+				<a href="#about"
+					class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-[#4CAF50]">키리나무 소개</a> 
+				<a href="#video"
+					class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-[#4CAF50]">영상자료</a> 
+				<a href="#features"
+					class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-[#4CAF50]">키리나무 특징</a>
+				<a href="#gallery"
+					class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-[#4CAF50]">키리나무 이미지</a>
+				<!-- <a href="#contact"
+					class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-[#4CAF50]">문의하기</a> -->
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section
+		class="hero-image h-96 flex items-center justify-center mt-20 text-white">
+		<div class="text-center px-4">
+			<h1 class="text-4xl md:text-5xl font-bold mb-4">빠르게 자라는 고급 수종, 키리나무
+			</h1>
+			<p class="text-xl mb-8">1년에 5m 이상 자라며 생태복원과 탄소흡수에 탁월한 친환경 나무, 키리나무를 소개합니다.</p>
+			<div class="flex justify-center items-center gap-5">
+				<a href="https://open.kakao.com/o/gAdfwDwh" target="_blank"
+					class="btn-kakao font-bold py-3 px-6 rounded-full transition duration-300 inline-block"><!-- <i class="fa-solid fa-bag-shopping mr-2"></i> -->카카오톡 오픈채팅방</a>
+			<!-- <a
+					href="https://www.youtube.com/watch?si=OZBSBtpj7nfhXsma&v=zI7lGbvAQsM&feature=youtu.be"
+					target="_blank"
+					class="btn-secondary font-bold py-3 px-6 rounded-full transition duration-300 inline-block">
+					<i class="fab fa-youtube mr-2"></i>영상보기
+				</a> -->
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-gray-800 mb-4">키리나무란 무엇인가요?
+				</h2>
+				<div class="w-20 h-1 bg-accent mx-auto"></div>
+			</div>
+			<div class="flex flex-col md:flex-row items-center">
+				<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+					<img src="img/kiritree/intro-01.jpg" alt="키리나무" class="rounded-lg shadow-lg w-full" />
+				</div>
+				<div class="md:w-1/2">
+					<div class="highlight-box p-6 mb-6">
+						<h3 class="text-2xl font-semibold text-dark mb-4">교배종 키리나무의
+							우수성</h3>
+						<p class="text-gray-700 mb-4">키리나무(Paulownia)는 빠른 성장 속도와 우수한
+							목재 품질로 인해 '기적의 나무'라고 불립니다. 저희가 제공하는 교배종 키리나무는 기존 종보다 더욱 향상된 특성을
+							가지고 있습니다.</p>
+					</div>
+					<p class="text-gray-700 mb-4">특히 우리나라 기후에 적합하게 개량된 품종으로, 병충해에
+						강하고 다양한 용도로 활용 가능한 것이 특징입니다.</p>
+					<p class="text-gray-700">키리나무는 관상용으로도 훌륭하지만, 목재로서의 가치가 매우 높아
+						경제적으로도 우수한 선택입니다. 빠른 성장 속도로 인해 단기간에 높은 수익을 기대할 수 있습니다.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Video Section -->
+	<section id="video" class="py-24 bg-white">
+		<div class="container mx-auto px-4">
+				<div class="text-center mb-12">
+					<h2 class="text-3xl font-bold text-gray-800 mb-4">영상자료</h2>
+					<div class="w-20 h-1 bg-accent mx-auto"></div>
+				</div>
+		        <div class="slider-container mb-8 relative">
+		            <!-- Active Video Display (initially hidden) -->
+		            <div class="video-container relative rounded-xl overflow-hidden bg-black mb-6">
+		                <div class="close-btn hidden" id="close-btn">
+		                    <i class="fas fa-times text-white"></i>
+		                </div>
+		                <iframe id="active-video" class="absolute top-0 left-0 w-full h-full" 
+		                        frameborder="0" allowfullscreen
+		                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+		                </iframe>
+		            </div>
+		            
+		            <!-- Thumbnail Slider -->
+		            <div class="relative">
+		                <div class="flex overflow-x-auto py-4 scrollbar-hide space-x-4 px-2" id="thumbnail-slider">
+		                    <!-- Thumbnails will be added here by JavaScript -->
+		                </div>
+		                
+		                <!-- Navigation Arrows -->
+		                <button id="prev-btn" class="slider-nav absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 h-12 w-12 rounded-full flex items-center justify-center z-10 hover:bg-white hover:bg-opacity-20 transition">
+		                    <i class="fas fa-chevron-left text-xl"></i>
+		                </button>
+		                <button id="next-btn" class="slider-nav absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 h-12 w-12 rounded-full flex items-center justify-center z-10 hover:bg-white hover:bg-opacity-20 transition">
+		                    <i class="fas fa-chevron-right text-xl"></i>
+		                </button>
+		            </div>
+		        </div>
+			</div>
+	</section>
+	
+	<!-- Features Section -->
+	<section id="features" class="py-24 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-gray-800 mb-4">키리나무의 주요 특징</h2>
+				<div class="w-20 h-1 bg-accent mx-auto"></div>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div
+					class="text-center p-8 rounded-lg bg-white shadow-sm hover:shadow-md border border-gray-100 duration-200">
+					<div class="feature-icon mb-4">
+						<i class="fas fa-tachometer-alt"></i>
+					</div>
+					<h3 class="text-xl font-semibold text-dark mb-2">빠른 성장</h3>
+					<p class="max-w-[320px] mx-auto text-gray-700">일반 나무보다 3-5배 빠른
+						성장 속도로 단기간에 큰 나무로 자랍니다. 1년에 3-4m까지 자라는 놀라운 성장력을 보입니다.</p>
+				</div>
+				<div
+					class="text-center p-8 rounded-lg bg-white shadow-sm hover:shadow-md border border-gray-100 duration-200">
+					<div class="feature-icon mb-4">
+						<i class="fas fa-shield-alt"></i>
+					</div>
+					<h3 class="text-xl font-semibold text-dark mb-2">병충해 강함</h3>
+					<p class="max-w-[320px] mx-auto text-gray-700">교배종으로 개발되어 병충해에
+						매우 강합니다. 관리가 쉽고 살충제 사용을 최소화할 수 있어 친환경적입니다.</p>
+				</div>
+				<div
+					class="text-center p-8 rounded-lg bg-white shadow-sm hover:shadow-md border border-gray-100 duration-200">
+					<div class="feature-icon mb-4">
+						<i class="fas fa-recycle"></i>
+					</div>
+					<h3 class="text-xl font-semibold text-dark mb-2">다양한 용도</h3>
+					<p class="max-w-[320px] mx-auto text-gray-700">가구재, 악기재, 공예품,
+						종이 원료 등으로 활용 가능합니다. 가볍고 튼튼한 특성으로 다양한 산업에서 사용됩니다.</p>
+				</div>
+				<div
+					class="text-center p-8 rounded-lg bg-white shadow-sm hover:shadow-md border border-gray-100 duration-200">
+					<div class="feature-icon mb-4">
+						<i class="fas fa-leaf"></i>
+					</div>
+					<h3 class="text-xl font-semibold text-dark mb-2">우수한 환경적응</h3>
+					<p class="max-w-[320px] mx-auto text-gray-700">한국 기후에 완벽히 적응한
+						품종으로, 추위와 더위 모두 잘 견디며 다양한 토양에서도 잘 자랍니다.</p>
+				</div>
+				<div
+					class="text-center p-8 rounded-lg bg-white shadow-sm hover:shadow-md border border-gray-100 duration-200">
+					<div class="feature-icon mb-4">
+						<i class="fas fa-chart-line"></i>
+					</div>
+					<h3 class="text-xl font-semibold text-dark mb-2">높은 경제성</h3>
+					<p class="max-w-[320px] mx-auto text-gray-700">빠른 성장과 고품질 목재로
+						인해 투자 대비 높은 수익률을 기대할 수 있습니다.</p>
+				</div>
+				<div
+					class="text-center p-8 rounded-lg bg-white shadow-sm hover:shadow-md border border-gray-100 duration-200">
+					<div class="feature-icon mb-4">
+						<i class="fas fa-heart"></i>
+					</div>
+					<h3 class="text-xl font-semibold text-dark mb-2">아름다운 꽃</h3>
+					<p class="max-w-[320px] mx-auto text-gray-700">봄에는 아름다운 라벤더색 꽃을
+						피워 정원의 중심이 되며, 꿀벌과 나비를 유인하는 데 탁월합니다.</p>
+				</div>
+			</div>
+		</div>
+		 <div class="container mx-auto px-4 pt-24 max-w-6xl">
+	        <div class="text-center mb-12">
+	            <h1 class="text-3xl font-bold text-gray-800 mb-3">수목별 탄소흡수율 비교</h1>
+	            <p class="text-gray-600 max-w-3xl mx-auto">
+	                다양한 수종의 연간 탄소 흡수량을 비교하고 가장 효과적인 탄소 중립 솔루션을 찾아보세요
+	            </p>
+	        </div>
+	        
+	        <div class="bg-white rounded-xl shadow-lg shadow-gray-100 overflow-hidden mb-8 border border-gray-200">
+	            <div class="px-6 py-4 bg-gray-100 border-b border-gray-200">
+	                <h2 class="text-xl font-bold text-gray-800">탄소 흡수량 순위</h2>
+	            </div>
+	            <div class="overflow-x-auto">
+	                <table class="min-w-full divide-y divide-gray-200">
+	                    <thead class="bg-gray-50">
+	                        <tr>
+	                            <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">순위</th>
+	                            <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">수종</th>
+	                            <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">탄소흡수량</th>
+	                            <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">효율</th>
+	                            <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">특징</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody class="bg-white divide-y divide-gray-200" id="treeTable">
+	                        <tr class="highlight-row">
+	                            <td class="px-6 py-4 whitespace-nowrap text-center">
+	                                <span class="carbon-badge bg-red-100 text-red-800">1위</span>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <div class="ml-4">
+	                                        <div class="text-sm font-bold text-gray-900">키리나무</div>
+	                                        <div class="text-xs text-gray-500">Paulownia</div>
+	                                    </div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="text-sm font-bold text-gray-900">103~150 kg CO₂</div>
+	                                <div class="progress-bar mt-1 w-32">
+	                                    <div class="progress-fill" style="width: 100%"></div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <span class="text-sm font-medium">매우 높음</span>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4">
+	                                <div class="text-sm text-gray-900">3~5년 수확 가능
+	                                    <br>목재 활용도 높음
+	                                </div>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="px-6 py-4 whitespace-nowrap text-center">
+	                                <span class="carbon-badge bg-blue-100 text-blue-800">2위</span>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <div class="ml-4">
+	                                        <div class="text-sm font-medium text-gray-900">유칼립투스</div>
+	                                        <div class="text-xs text-gray-500">Eucalyptus</div>
+	                                    </div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="text-sm text-gray-900">90~110 kg CO₂</div>
+	                                <div class="progress-bar mt-1 w-32">
+	                                    <div class="progress-fill" style="width: 80%"></div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <span class="text-sm font-medium">높음</span>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4">
+	                                <div class="text-sm text-gray-900">수분 소비량 높음
+	                                    <br>열대성 수종
+	                                </div>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="px-6 py-4 whitespace-nowrap text-center">
+	                                <span class="carbon-badge bg-purple-100 text-purple-800">3위</span>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <div class="ml-4">
+	                                        <div class="text-sm font-medium text-gray-900">플라타너스</div>
+	                                        <div class="text-xs text-gray-500">Platanus</div>
+	                                    </div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="text-sm text-gray-900">70~90 kg CO₂</div>
+	                                <div class="progress-bar mt-1 w-32">
+	                                    <div class="progress-fill" style="width: 65%"></div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <span class="text-sm font-medium">보통</span>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4">
+	                                <div class="text-sm text-gray-900">도시 가로수로 흔함
+	                                </div>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="px-6 py-4 whitespace-nowrap text-center">
+	                                <span class="carbon-badge bg-gray-100 text-gray-800">4위</span>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <div class="ml-4">
+	                                        <div class="text-sm font-medium text-gray-900">참나무</div>
+	                                        <div class="text-xs text-gray-500">Quercus</div>
+	                                    </div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="text-sm text-gray-900">60~70 kg CO₂</div>
+	                                <div class="progress-bar mt-1 w-32">
+	                                    <div class="progress-fill" style="width: 50%"></div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <span class="text-sm font-medium">보통</span>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4">
+	                                <div class="text-sm text-gray-900">성장 속도 느림
+	                                    <br>장수 수종
+	                                </div>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="px-6 py-4 whitespace-nowrap text-center">
+	                                <span class="carbon-badge bg-gray-100 text-gray-800">5위</span>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <div class="ml-4">
+	                                        <div class="text-sm font-medium text-gray-900">느티나무</div>
+	                                        <div class="text-xs text-gray-500">Zelkova</div>
+	                                    </div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="text-sm text-gray-900">60~75 kg CO₂</div>
+	                                <div class="progress-bar mt-1 w-32">
+	                                    <div class="progress-fill" style="width: 50%"></div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <span class="text-sm font-medium">보통</span>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4">
+	                                <div class="text-sm text-gray-900">조경수로 인기
+	                                </div>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="px-6 py-4 whitespace-nowrap text-center">
+	                                <span class="carbon-badge bg-gray-100 text-gray-800">6위</span>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <div class="ml-4">
+	                                        <div class="text-sm font-medium text-gray-900">소나무</div>
+	                                        <div class="text-xs text-gray-500">Pinus</div>
+	                                    </div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="text-sm text-gray-900">50~60 kg CO₂</div>
+	                                <div class="progress-bar mt-1 w-32">
+	                                    <div class="progress-fill" style="width: 40%"></div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <span class="text-sm font-medium">낮음</span>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4">
+	                                <div class="text-sm text-gray-900">국내에 흔함
+	                                    <br>중간 성장 속도
+	                                </div>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="px-6 py-4 whitespace-nowrap text-center">
+	                                <span class="carbon-badge bg-gray-100 text-gray-800">7위</span>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <div class="ml-4">
+	                                        <div class="text-sm font-medium text-gray-900">자작나무</div>
+	                                        <div class="text-xs text-gray-500">Betula</div>
+	                                    </div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="text-sm text-gray-900">45~55 kg CO₂</div>
+	                                <div class="progress-bar mt-1 w-32">
+	                                    <div class="progress-fill" style="width: 35%"></div>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4 whitespace-nowrap">
+	                                <div class="flex items-center">
+	                                    <span class="text-sm font-medium">낮음</span>
+	                                </div>
+	                            </td>
+	                            <td class="px-6 py-4">
+	                                <div class="text-sm text-gray-900">추운 지역에 강함
+	                                </div>
+	                            </td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	            </div>
+	            
+	            <div class="px-6 py-4 bg-gray-50 border-t border-gray-200 text-sm text-gray-500">
+	                <i class="fas fa-info-circle text-[#4CAF50] mr-2"></i> 
+               		 탄소 흡수량은 수목의 종류, 생장 환경, 수령 등에 따라 차이가 있을 수 있습니다.
+	            </div>
+	        </div>
+	        
+	        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+	            <div class="bg-white p-6 rounded-lg shadow-md shadow-gray-100 border border-gray-200">
+	                <div class="flex items-center mb-4">
+	                    <div class="w-[30px] h-[30px] flex justify-center items-center bg-gray-100 rounded-full mr-4">
+	                        <i class="fas fa-trophy text-gray-600 text-sm"></i>
+	                    </div>
+	                    <h3 class="text-lg font-bold text-gray-800">최고의 탄소 흡수수</h3>
+	                </div>
+	                <p class="text-gray-600 mb-3">
+	                    	키리나무는 다른 수종에 비해 2배 이상의 탄소를 흡수하며, 빠른 성장 속도로 인해 단기간에 효과를 볼 수 있습니다.
+	                </p>
+	                <div class="flex justify-between items-center">
+	                    <span class="text-sm text-gray-500">추천 등급</span>
+	                    <div class="flex">
+	                        <i class="fas fa-star text-yellow-400"></i>
+	                        <i class="fas fa-star text-yellow-400"></i>
+	                        <i class="fas fa-star text-yellow-400"></i>
+	                        <i class="fas fa-star text-yellow-400"></i>
+	                        <i class="fas fa-star text-yellow-400"></i>
+	                    </div>
+	                </div>
+	            </div>
+	            
+	            <div class="bg-white p-6 rounded-lg shadow-md shadow-gray-100 border border-gray-200">
+	                <div class="flex items-center mb-4">
+	                    <div class="w-[30px] h-[30px] flex justify-center items-center bg-gray-100 rounded-full mr-4">
+	                        <i class="fas fa-chart-line text-gray-600 text-sm"></i>
+	                    </div>
+	                    <h3 class="text-lg font-bold text-gray-800">성장 속도 비교</h3>
+	                </div>
+	                <p class="text-gray-600 mb-3">
+	                    	키리나무는 3~5년이면 수확 가능한 반면, 참나무나 소나무는 수십 년이 걸립니다. 단기 탄소 중립 목표에는 키리나무가 적합합니다.
+	                </p>
+	                <div class="bg-gray-100 p-2 rounded text-center text-sm">
+	                    <span class="font-medium">키리나무 성장 속도: </span>
+	                    <span class="font-semibold">매우 빠름</span>
+	                </div>
+	            </div>
+	            
+	            <div class="bg-white p-6 rounded-lg shadow-md shadow-gray-100 border border-gray-200">
+	                <div class="flex items-center mb-4">
+	                    <div class="w-[30px] h-[30px] flex justify-center items-center bg-gray-100 rounded-full mr-4">
+	                        <i class="fas fa-recycle text-gray-600 text-sm"></i>
+	                    </div>
+	                    <h3 class="text-lg font-bold text-gray-800">목재 활용도</h3>
+	                </div>
+	                <p class="text-gray-600 mb-3">
+	                    	키리나무 목재는 가볍고 강도가 좋아 가구, 악기, 공예품 등 다양한 용도로 사용 가능하며 경제적 가치도 높습니다.
+	                </p>
+	                <div class="flex space-x-2">
+	                    <span class="px-2 py-1 bg-gray-100 text-xs rounded-full">가구 제작</span>
+	                    <span class="px-2 py-1 bg-gray-100 text-xs rounded-full">악기</span>
+	                    <span class="px-2 py-1 bg-gray-100 text-xs rounded-full">공예</span>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	
+	<!-- kakao Section -->
+	<section id="products" class="py-10 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-2">
+				<h2 class="text-3xl font-bold text-gray-800 mb-4">키리나무 오픈채팅방</h2>
+				<div class="w-20 h-1 bg-accent mx-auto"></div>
+			</div>
+			<div class="text-center mt-4">
+				<p class="text-gray-700 mb-4">
+					키리나무의 정보를 얻고 싶으신 분들은 <br> 오픈채팅방에 참여해주세요.
+				</p>
+				<div class="flex justify-center items-center">
+					<img src="img/kiritree/kakao-qr.jpg" alt="카카오톡 오픈채팅 큐알코드"
+						class="w-[200px]">
+				</div>
+				<a href="https://open.kakao.com/o/gAdfwDwh" target="_blank"
+					class="btn-kakao font-bold py-3 px-6 rounded-full transition duration-300 inline-block">카카오톡
+					오픈채팅방</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- gallery -->
+	<section id="gallery" class="py-24 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-gray-800 mb-4">키리나무 이미지</h2>
+				<div class="w-20 h-1 bg-accent mx-auto"></div>
+			</div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-01.jpg" alt="키리나무 모종"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 모종</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-02.jpg" alt="키리나무 모종"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 모종</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-03.jpg" alt="키리나무 모종"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 모종</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-04.jpg" alt="키리나무 모종"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 모종</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-05.jpg" alt="키리나무 재배실"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 재배실</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-06.jpg" alt="키리나무"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-07.jpg" alt="키리나무"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-08.jpg" alt="키리나무 모종"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 모종</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-09.jpg" alt="키리나무 밭"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 밭</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-10.jpg" alt="키리나무 밭 전체샷"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 밭 전체샷</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-11.jpg" alt="키리나무 밭 전체샷"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 밭 전체샷</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-12.jpg" alt="키리나무 이파리"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 이파리</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-13.jpg" alt="키리나무 밭"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 밭</p>
+					</div>
+				</div>
+
+				<div class="gallery-image overflow-hidden rounded-lg shadow-md">
+					<img src="img/kiritree/kiri-14.jpg" alt="키리나무 밭"
+						class="w-full h-64 object-cover hover:opacity-90 transition" />
+					<div class="p-4 bg-white">
+						<p class="text-sm text-gray-500">[실제 사진] 키리나무 밭</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-10">
+				<button onclick="openModal()"
+					class="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-full font-medium transition duration-300 inline-flex items-center">
+					<i class="fas fa-images mr-2"></i> 전체 사진 보기
+				</button>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<!-- 사진 모달 -->
+	<div id="imageModal"
+		class="modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 opacity-0 invisible transition">
+		<div
+			class="bg-white rounded-lg max-w-4xl w-full max-h-screen overflow-auto">
+			<div class="p-4 flex justify-between items-center border-b">
+				<h3 class="text-xl font-bold">키리나무 이미지</h3>
+				<button onclick="closeModal()"
+					class="text-gray-500 hover:text-gray-700">
+					<i class="fas fa-times text-xl"></i>
+				</button>
+			</div>
+			<div class="p-6">
+				<img id="modalImage" src="" alt="" class="w-full h-auto rounded" />
+				<p id="modalCaption" class="mt-4 text-gray-600 text-center"></p>
+			</div>
+			<div class="p-4 border-t flex justify-between">
+				<button onclick="prevImage()"
+					class="text-green-700 hover:text-green-900 flex items-center">
+					<i class="fas fa-chevron-left mr-2"></i> 이전
+				</button>
+				<button onclick="nextImage()"
+					class="text-green-700 hover:text-green-900 flex items-center">
+					다음 <i class="fas fa-chevron-right ml-2"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- FAQ Section -->
+	<section class="py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-gray-800 mb-4">자주 묻는 질문</h2>
+				<div class="w-20 h-1 bg-accent mx-auto"></div>
+			</div>
+			<div class="max-w-3xl mx-auto space-y-4">
+				<div class="border border-gray-200 rounded-lg overflow-hidden">
+					<button
+						class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-light font-medium text-gray-800 flex justify-between items-center">
+						<span>1. 키리나무는 어떤 나무인가요?</span> <i
+							class="fas fa-chevron-down transition-transform duration-300"></i>
+					</button>
+					<div class="faq-answer p-4 bg-white hidden">
+						<p class="text-gray-700">키리나무(기리나무, Paulownia tomentosa)는 세계에서 가장 빠르게 자라는 낙엽활엽 교목으로, 봄에 연보라색 꽃이 피며 목재는 가볍고 단단하여 악기, 가구, 건축재 등 다양한 용도로 활용됩니다. 
+						중국, 한국, 일본 등 동아시아 지역에서 전통적으로 사랑받아 왔으며, 최근에는 환경친화적인 조림 수종으로 주목받고 있습니다.</p>
+					</div>
+				</div>
+				<div class="border border-gray-200 rounded-lg overflow-hidden">
+					<button
+						class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-light font-medium text-gray-800 flex justify-between items-center">
+						<span>2. 키리나무는 어떻게 키우나요?</span> <i
+							class="fas fa-chevron-down transition-transform duration-300"></i>
+					</button>
+					<div class="faq-answer p-4 bg-white hidden">
+						<p class="text-gray-700">키리나무는 빠르게 성장하는 특성 덕분에 관리가 비교적 쉬운 편입니다.<br>
+							· 토양: 배수가 잘 되는 흙에서 잘 자랍니다.<br>
+							· 일조량: 햇빛을 좋아하므로 햇볕이 잘 드는 곳에 심습니다.<br>
+							· 물주기: 초기에는 수분을 충분히 주되, 뿌리가 자리잡은 후에는 과습에 주의합니다.<br>
+							· 간격: 나무 간격은 최소 3~5m 이상 확보해 주세요.<br>
+							· 전정: 수형을 잡기 위해 가지치기가 필요할 수 있습니다.<br>
+							· 벌채 후 재생력: 밑동에서 다시 싹이 올라오기 때문에 지속 가능한 조림이 가능합니다.</p>
+					</div>
+				</div>
+				<div class="border border-gray-200 rounded-lg overflow-hidden">
+					<button
+						class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-light font-medium text-gray-800 flex justify-between items-center">
+						<span>3. 키리나무는 왜 친환경 수종으로 주목받고 있나요?</span> <i
+							class="fas fa-chevron-down transition-transform duration-300"></i>
+					</button>
+					<div class="faq-answer p-4 bg-white hidden">
+						<p class="text-gray-700">키리나무는 이산화탄소(CO₂) 흡수 능력이 뛰어나고, 빠른 생장 속도 덕분에 단기간에 산림을 조성할 수 있습니다. 
+						벌채 후에도 자연 재생이 가능해 지속가능한 산림 관리에 이상적이며, 탄소중립 실현을 위한 녹색사업에 널리 활용됩니다.</p>
+					</div>
+				</div>
+				<div class="border border-gray-200 rounded-lg overflow-hidden">
+					<button
+						class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-light font-medium text-gray-800 flex justify-between items-center">
+						<span>4. 키리나무 목재는 어떤 용도로 활용되나요?</span> <i
+							class="fas fa-chevron-down transition-transform duration-300"></i>
+					</button>
+					<div class="faq-answer p-4 bg-white hidden">
+						<p class="text-gray-700">키리나무 목재는 가볍고 튼튼하며 가공이 쉬운 특성을 가져 아래와 같은 용도에 적합합니다:<br>
+							· 전통 가구 및 장롱<br>
+							· 현악기 (거문고, 가야금, 기타)<br>
+							· 고급 포장재<br>
+							· 건축 내장재, 합판 등<br>
+							· 또한 화재 시에도 열에 잘 견디는 특성으로 건축자재로의 활용이 증가하고 있습니다.</p>
+					</div>
+				</div>
+				<div class="border border-gray-200 rounded-lg overflow-hidden">
+					<button
+						class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-light font-medium text-gray-800 flex justify-between items-center">
+						<span>5. 키리나무를 심으면 수익성이 있나요?</span> <i
+							class="fas fa-chevron-down transition-transform duration-300"></i>
+					</button>
+					<div class="faq-answer p-4 bg-white hidden">
+						<p class="text-gray-700">키리나무는 5~7년 내에 성목이 되어 수확이 가능하며, 그 목재는 고급재로 분류되어 평균적으로 높은 판매가를 유지하고 있습니다.
+						또한 벌채 후 다시 자라나는 특성 때문에 1회 식재로 장기 수익 창출이 가능하며, 탄소배출권 사업이나 녹색인증 사업과 연계될 경우 추가 수익도 기대할 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<!-- <section id="contact" class="py-24 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-gray-800 mb-4">문의하기</h2>
+				<div class="w-20 h-1 bg-accent mx-auto"></div>
+			</div>
+			
+			<div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-sm">
+				<form class="space-y-6">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+						<div>
+							<label for="name" class="block mb-2 text-gray-700">이름</label> <input
+								type="text" id="name"
+								class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" />
+						</div>
+						<div>
+							<label for="email" class="block mb-2 text-gray-700">이메일</label>
+							<input type="email" id="email"
+								class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" />
+						</div>
+					</div>
+					<div>
+						<label for="subject" class="block mb-2 text-gray-700">제목</label> <input
+							type="text" id="subject"
+							class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" />
+					</div>
+					<div>
+						<label for="message" class="block mb-2 text-gray-700">문의
+							내용</label>
+						<textarea id="message" rows="5"
+							class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"></textarea>
+					</div>
+					<button type="submit"
+						class="btn-primary font-bold py-3 px-6 rounded transition duration-300 w-full">
+						문의 보내기</button> 
+				</form>
+				<div class="mt-2 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+					<div>
+						<i class="fas fa-phone-alt text-2xl mb-4 text-accent"></i>
+						<h3 class="text-xl font-semibold mb-2 text-gray-800">전화 문의</h3>
+						<p class="text-gray-600 text-sm"><a href="tel:07079544845">070-7954-4845</a></p>
+					</div>
+					<div>
+						<i class="fas fa-envelope text-2xl mb-4 text-accent"></i>
+						<h3 class="text-xl font-semibold mb-2 text-gray-800">이메일</h3>
+						<p class="text-gray-600 text-sm"><a href="mailto:support@grintrader.co.kr">support@grintrader.co.kr</a></p>
+					</div>
+					<div>
+						<i class="fas fa-map-marker-alt text-2xl mb-4 text-accent"></i>
+						<h3 class="text-xl font-semibold mb-2 text-gray-800">농장 위치</h3>
+						<p class="text-gray-600 text-sm"><a href="https://map.kakao.com/link/search/이천시 마장면 중부대로225번길 69" target="_blank" rel="noopener noreferrer">이천시 마장면 중부대로225번길 69</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- Footer -->
+	<footer class="bg-gray-800 text-white py-8">
+		<div class="container mx-auto px-4">
+			<div class="flex flex-col md:flex-row justify-between items-start">
+				<div class="mb-6 md:mb-0">
+					<!-- 포레스트 벤처스 -->
+					<div class="mb-4">
+						<div class="flex items-center">
+							<h2>
+								<img src="img/kiritree/forestventures.png" alt="포레스트 벤처스 로고"
+									class="w-[180px]">
+							</h2>
+						</div>
+						<p class="mt-1 text-gray-400 text-sm">주소: 이천시 마장면 중부대로225번길 69</p>
+					</div>
+					<!-- 그린트레이더 -->
+					<div>
+						<div class="flex items-center">
+							<h2>
+								<img src="img/kiritree/grintrader.png" alt="그린트레이더 로고"
+									class="w-[160px]">
+							</h2>
+						</div>
+						<p class="mt-1 text-gray-400 text-sm">주소: 부산광역시 부산진구 양정동
+							351-1, 401호 (부산콘텐츠비즈타운)</p>
+					</div>
+				</div>
+				<!-- <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div> -->
+			</div>
+			<div
+				class="border-t border-gray-700 mt-8 pt-4 flex flex-col md:flex-row justify-between">
+				<div class="mb-4 md:mb-0">
+					<p class="text-gray-400 text-xs">© 2025 그린트레이더. All rights
+						reserved.</p>
+				</div>
+				<div
+					class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0">
+					<!-- <a href="#" class="text-sm text-gray-400 hover:text-white">이용약관</a>
+					<a href="#" class="text-sm text-gray-400 hover:text-white">개인정보처리방침</a>  -->
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Back to Top Button -->
+	<button id="back-to-top"
+		class="fixed bottom-8 right-8 bg-[#4CAF50] text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition duration-300 opacity-0 invisible">
+		<i class="fas fa-arrow-up"></i>
+	</button>
+
+	<script>
+        // 갤러리 모달 기능
+        const images = [
+        {
+          src: "img/kiritree/kiri-01.jpg",
+          caption: "키리나무 모종",
+        },
+        {
+          src: "img/kiritree/kiri-02.jpg",
+          caption: "키리나무 모종",
+        },
+        {
+          src: "img/kiritree/kiri-03.jpg",
+          caption: "키리나무 모종",
+        },
+        {
+          src: "img/kiritree/kiri-04.jpg",
+          caption: "키리나무 모종",
+        },
+        {
+          src: "img/kiritree/kiri-05.jpg",
+          caption: "키리나무 재배실",
+        },
+        {
+          src: "img/kiritree/kiri-06.jpg",
+          caption: "키리나무",
+        },
+        {
+          src: "img/kiritree/kiri-07.jpg",
+          caption: "키리나무",
+        },
+        {
+          src: "img/kiritree/kiri-08.jpg",
+          caption: "키리나무 모종",
+        },
+        {
+          src: "img/kiritree/kiri-09.jpg",
+          caption: "키리나무 밭",
+        },
+        {
+          src: "img/kiritree/kiri-10.jpg",
+          caption: "키리나무 밭 전체샷",
+        },
+        {
+          src: "img/kiritree/kiri-11.jpg",
+          caption: "키리나무 밭 전체샷",
+        },
+        {
+          src: "img/kiritree/kiri-12.jpg",
+          caption: "키리나무 이파리",
+        },
+        {
+          src: "img/kiritree/kiri-13.jpg",
+          caption: "키리나무 밭",
+        },
+        {
+          src: "img/kiritree/kiri-14.jpg",
+          caption: "키리나무 밭",
+        },
+      ];
+
+      let currentImageIndex = 0;
+
+      function openModal(index = 0) {
+        currentImageIndex = index;
+        updateModal();
+        document
+          .getElementById("imageModal")
+          .classList.remove("invisible", "opacity-0");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        document
+          .getElementById("imageModal")
+          .classList.add("invisible", "opacity-0");
+        document.body.style.overflow = "auto";
+      }
+
+      function updateModal() {
+        document.getElementById("modalImage").src =
+          images[currentImageIndex].src;
+        document.getElementById("modalCaption").textContent =
+          images[currentImageIndex].caption;
+      }
+
+      function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        updateModal();
+      }
+
+      function prevImage() {
+        currentImageIndex =
+          (currentImageIndex - 1 + images.length) % images.length;
+        updateModal();
+      }
+
+      // 갤러리 이미지 클릭 시 모달 열기
+      document.querySelectorAll(".gallery-image img").forEach((img, index) => {
+        img.addEventListener("click", () => openModal(index));
+      });
+
+
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // FAQ accordion functionality
+      document.querySelectorAll(".faq-question").forEach((button) => {
+        button.addEventListener("click", () => {
+          const answer = button.nextElementSibling;
+          const icon = button.querySelector("i");
+
+          // Toggle answer visibility
+          answer.classList.toggle("hidden");
+
+          // Rotate icon
+          icon.classList.toggle("transform");
+          icon.classList.toggle("rotate-180");
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Back to top button
+      const backToTopButton = document.getElementById("back-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove("opacity-0", "invisible");
+          backToTopButton.classList.add("opacity-100", "visible");
+        } else {
+          backToTopButton.classList.remove("opacity-100", "visible");
+          backToTopButton.classList.add("opacity-0", "invisible");
+        }
+      });
+
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+      
+      // Video Gallery
+            document.addEventListener('DOMContentLoaded', function() {
+            // Video data
+            const videos = [
+                {
+                    id: 'zI7lGbvAQsM',
+                    title: '1년 6m 성장! 전세계 가장 빨리 크는 "이 나무" 목재로 전세계 수출하는 남자',
+                    thumbnail: 'https://i.ytimg.com/vi/zI7lGbvAQsM/hqdefault.jpg'
+                },
+                {
+                    id: 'QJd6ycT6RDA',
+                    title: 'WeGrow 2019, Paulownia, Paulonia, Kiribaum, Kiri Tree',
+                    thumbnail: 'https://i.ytimg.com/vi/QJd6ycT6RDA/hqdefault.jpg'
+                },
+                {
+                    id: 'o4ZOCqm_MMU',
+                    title: 'Kiri tree (Paulownia) plantation in Spain by WeGrow (new version with tracking)',
+                    thumbnail: 'https://i.ytimg.com/vi/o4ZOCqm_MMU/hqdefault.jpg'
+                },
+                {
+                    id: 'bBZueAd0EqQ',
+                    title: 'Kiribaum-Anbau in Spanien (Paulownia, Kiribaum, KiriFarm, WeGrow)',
+                    thumbnail: 'https://i.ytimg.com/vi/bBZueAd0EqQ/hqdefault.jpg'
+                },
+                {
+                    id: 'J-MeSt6cgOA',
+                    title: 'WeGrow AG 2021 Paulownia Kiri Tree Paulonia sustainable timber production',
+                    thumbnail: 'https://i.ytimg.com/vi/J-MeSt6cgOA/hqdefault.jpg'
+                },
+                {
+                    id: 'oKvjoOVxeG4',
+                    title: 'WeGrow AG 2021 Paulownia Kiri Tree Paulonia sustainable timber production',
+                    thumbnail: 'https://i.ytimg.com/vi/oKvjoOVxeG4/hqdefault.jpg'
+                },
+                {
+                    id: 'cDz3NBPfn5c',
+                    title: 'WeGrow Kiri-Tree (Paulownia) state-of-the-art in vitro laboratory 2020 / EN',
+                    thumbnail: 'https://i.ytimg.com/vi/cDz3NBPfn5c/hqdefault.jpg'
+                }
+            ];
+
+            const slider = document.getElementById('thumbnail-slider');
+            const activeVideo = document.getElementById('active-video');
+            const videoContainer = document.querySelector('.video-container');
+            const closeBtn = document.getElementById('close-btn');
+            let currentIndex = 0;
+
+            // Create thumbnails
+            videos.forEach((video, index) => {
+                const thumbnail = document.createElement('div');
+                thumbnail.className = `slider-item flex-shrink-0 w-64 h-36 rounded-lg overflow-hidden cursor-pointer relative group md:w-72 md:h-40`;
+                thumbnail.innerHTML = `
+                    <img src="${video.thumbnail}" alt="${video.title}" class="thumbnail w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <i class="fas fa-play text-2xl text-white"></i>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-2">
+                        <p class="text-sm font-medium truncate text-white">${video.title}</p>
+                    </div>
+                `;
+                thumbnail.addEventListener('click', () => {
+                    openVideo(index);
+                });
+                slider.appendChild(thumbnail);
+            });
+
+            // Open video function
+            function openVideo(index) {
+                currentIndex = index;
+                videoContainer.classList.add('show');
+                closeBtn.classList.remove('hidden');
+                setActiveVideo(index);
+                scrollToThumbnail(index);
+            }
+
+            // Close button functionality
+            closeBtn.addEventListener('click', () => {
+                videoContainer.classList.remove('show');
+                closeBtn.classList.add('hidden');
+                activeVideo.src = ''; // Stop the video
+            });
+
+            // Navigation buttons - now they don't close the video
+            document.getElementById('prev-btn').addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + videos.length) % videos.length;
+                setActiveVideo(currentIndex);
+                scrollToThumbnail(currentIndex);
+            });
+
+            document.getElementById('next-btn').addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % videos.length;
+                setActiveVideo(currentIndex);
+                scrollToThumbnail(currentIndex);
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + videos.length) % videos.length;
+                    setActiveVideo(currentIndex);
+                    scrollToThumbnail(currentIndex);
+                } else if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % videos.length;
+                    setActiveVideo(currentIndex);
+                    scrollToThumbnail(currentIndex);
+                } else if (e.key === 'Escape') {
+                    videoContainer.classList.remove('show');
+                    closeBtn.classList.add('hidden');
+                    activeVideo.src = ''; // Stop the video
+                }
+            });
+
+            function setActiveVideo(index) {
+                currentIndex = index;
+                
+                // Update active thumbnail
+                document.querySelectorAll('.slider-item').forEach((item, i) => {
+                    if (i === index) {
+                        item.classList.add('active');
+                    } else {
+                        item.classList.remove('active');
+                    }
+                });
+                
+                // Update video
+                if (videoContainer.classList.contains('show')) {
+                    activeVideo.src = `https://www.youtube.com/embed/${videos[index].id}?autoplay=1&rel=0`;
+                }
+            }
+
+            function scrollToThumbnail(index) {
+                const thumbnails = document.querySelectorAll('.slider-item');
+                if (thumbnails[index]) {
+                    thumbnails[index].scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'nearest',
+                        inline: 'center'
+                    });
+                }
+            }
+
+            // Initialize first video as active
+            document.querySelector('.slider-item').classList.add('active');
+        });
+      
+      
+      		// table
+            document.addEventListener('DOMContentLoaded', function() {
+                const sortBtn = document.getElementById('sortBtn');
+                const treeTable = document.getElementById('treeTable');
+                let isSorted = false;
+                
+                // Highlight the top performer row
+                const highlightRow = document.querySelector('.highlight-row');
+                setTimeout(() => {
+                    highlightRow.classList.add('bg-gray-100');
+                }, 2000);
+                
+                // Sort functionality
+                sortBtn.addEventListener('click', function() {
+                    const rows = Array.from(treeTable.querySelectorAll('tr'));
+                    
+                    rows.sort((a, b) => {
+                        const aValue = parseFloat(a.querySelector('td:nth-child(3) div:nth-child(1)').textContent);
+                        const bValue = parseFloat(b.querySelector('td:nth-child(3) div:nth-child(1)').textContent);
+                        
+                        return isSorted ? aValue - bValue : bValue - aValue;
+                    });
+                    
+                    // Re-append sorted rows
+                    rows.forEach(row => treeTable.appendChild(row));
+                    
+                    // Toggle sort direction
+                    isSorted = !isSorted;
+                    sortBtn.innerHTML = isSorted 
+                        ? '<i class="fas fa-sort-amount-up-alt mr-2 text-gray-500"></i> 정렬' 
+                        : '<i class="fas fa-sort-amount-down-alt mr-2 text-gray-500"></i> 정렬';
+                    
+                    // Update ranking badges after sort
+                    updateRankingBadges();
+                });
+                
+                function updateRankingBadges() {
+                    const rows = treeTable.querySelectorAll('tr');
+                    const badgeClasses = [
+                        'bg-green-100 text-green-800',
+                        'bg-blue-100 text-blue-800',
+                        'bg-purple-100 text-purple-800',
+                        'bg-yellow-100 text-yellow-800',
+                        'bg-yellow-100 text-yellow-800',
+                        'bg-red-100 text-red-800',
+                        'bg-red-100 text-red-800'
+                    ];
+                    
+                    rows.forEach((row, index) => {
+                        const badge = row.querySelector('td:first-child span');
+                        const rankText = `${index + 1}위`;
+                        
+                        if (badge) {
+                            badge.className = 'carbon-badge ' + badgeClasses[index];
+                            badge.textContent = rankText;
+                        }
+                    });
+                }
+                
+                // Add hover effect to tree images
+                const treeImages = document.querySelectorAll('.tree-img');
+                treeImages.forEach(img => {
+                    img.addEventListener('mouseenter', function() {
+                        this.style.transform = 'scale(1.1)';
+                    });
+                    img.addEventListener('mouseleave', function() {
+                        this.style.transform = 'scale(1)';
+                    });
+                });
+            });
+    </script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+/* -- sub common -- */
+.page-wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+.headline {
+	font-weight: 900;
+	line-height: 2.5;
+	letter-spacing: -.02em;
+	margin: 8px 0 32px;
+}
+
+/* -- intro page -- */
+.gt-highlight {
+	position: relative;
+	z-index: 0;
+}
+
+.gt-highlight::after {
+	content: "";
+	position: absolute;
+	left: -6px;
+	right: -6px;
+	bottom: .18em; /* 텍스트 아래 붙도록 */
+	height: .58em; /* 두께 */
+	background: #B3D0FF; /* tailwind emerald-500 느낌 */
+	border-radius: 9999px;
+	transform: skewX(-12deg);
+	z-index: -1; /* 텍스트 뒤로 */
+}
+
+/* -- location page -- */
+.info-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 32px;
+	align-items: start;
+	margin-bottom: 16px;
+}
+
+.addr {
+	font-weight: 700;
+	font-size: 16px;
+	color: #111827;
+	margin-bottom: 10px;
+}
+
+.meta {
+	font-size: 12px;
+	color: #6b7280;
+	line-height: 1.8;
+}
+
+.sep {
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, .08);
+	margin: 50px 0;
+}
+
+.gmap {
+	width: 100%;
+	height: clamp(280px, 40vh, 500px);
+	border: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #e5e7eb;
+}
+
+@media ( max-width :900px) {
+	.info-grid {
+		grid-template-columns: 1fr
+	}
+	.headline {
+		font-size: clamp(26px, 8vw, 52px)
+	}
+	.sep {
+		margin: 22px 0;
+	}
+}
