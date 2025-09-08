@@ -328,7 +328,7 @@ $(document).ready(function() {
 			var userConfirmed = confirm("등록하시겠습니까?");
 			if (userConfirmed) {
 	       		$.ajax({
-		            url: "https://admin.grinnow.com/external/enquiry_insert",
+		            url: "/page/contact_insert",
 		            type: "POST",
 		            contentType: "application/json",
 		            data: JSON.stringify(sendData),
@@ -336,7 +336,7 @@ $(document).ready(function() {
 						if(data != null) {
 							if (data["response"] == "SUCCESS"){
 								alert("정상적으로 문의글이 등록되었습니다.");
-								$('#mainForm')[0].reset();
+								$('#contactForm')[0].reset();
 								document.getElementById("contactModal").classList.add("hidden");
 							}else{
 								alert("등록에 실패하였습니다.");

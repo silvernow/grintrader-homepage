@@ -12,7 +12,6 @@
 	<!-- Type Aliases 설정-->
 	<typeAliases>
 		
-		<!-- COMMON -->
 		<typeAlias alias="EgovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap" />
 		<typeAlias alias="PageVO" type="grinnow.com.page.service.PageVO" />
 		

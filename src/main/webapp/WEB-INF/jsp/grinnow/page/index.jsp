@@ -265,7 +265,7 @@
 		               		<label for="cPhone" class="block text-sm font-medium text-gray-700 mb-1">휴대폰번호</label>
 		               		<input id="cPhone" name="cPhone" type="text" maxlength="20"
 		                       	class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color focus:border-transparent"
-		                       	placeholder="010-0000-0000">
+		                       	placeholder="숫자만입력" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
 		               	</div>
 		               	<div>
 		               		<label for="cMessage" class="block text-sm font-medium text-gray-700 mb-1">내용</label>

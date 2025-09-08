@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pageMapper">
+	
+	<!-- 뉴스테러목록 -->
+	<resultMap id="newsletterList" type="PageVO">
+		<result property="pressId" column="press_id"/>
+		<result property="pressTitle" column="press_title"/>
+		<result property="pressLink" column="press_link"/>
+		<result property="pressTy" column="press_ty"/>
+		<result property="pressTyNm" column="press_ty_nm"/>
+		<result property="creDt" column="cre_dt"/>
+	</resultMap> 
+
+	<!-- 뉴스레터 리스트 -->
+	<select id="selectNewsletterList" parameterType="PageVO" resultMap="newsletterList">
+ 		SELECT a.press_id
+	         , a.press_title
+	         , a.press_link
+	         , a.a.press_ty
+	         , fn_code_nm(a.press_ty, 'COM022') AS a.press_ty_nm 
+		 	 , TO_CHAR(a.cre_dt, 'YYYY-MM-DD') AS cre_dt
+		  FROM tb_bbs_press a
+		 WHERE a.use_yn = 'Y'
+		   AND a.system_cd = 'GRINTRADER'
+ 		ORDER BY a.cre_dt DESC
+		LIMIT #{recordCountPerPage} OFFSET #{firstIndex}
+	</select> 
+
+	<!-- 뉴스레터 리스트 총건수 -->
+	<select id="selectNewsletterListCount" parameterType="PageVO" resultType="java.lang.Integer">
+		SELECT COUNT(*) AS totCnt
+		  FROM tb_bbs_press a
+		 WHERE a.use_yn = 'Y'
+		   AND a.system_cd = 'GRINTRADER'
+	</select>
+	
+	<!-- 회사홈페이지 문의등록 -->
+	<insert id="insertContact" parameterType="java.util.HashMap">
+		<![CDATA[
+			INSERT INTO tb_bbs_contact
+				( name
+				  , email
+				  , phone
+				  , message
+				  , agree_policy
+				  , cre_dt )
+			VALUES ( #{name}
+			      , #{email}
+			      , #{phone}
+				  , #{message}
+				  , #{agreePolicy}
+				  , NOW() )
+		]]>
+	</insert>
+	
+	
+	
+</mapper>
