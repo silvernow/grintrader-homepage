@@ -8,7 +8,7 @@
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d %5p [%c] %m%n" />
         </Console>
-	   <RollingFile name="file" fileName="/www/grinnow/app/log/${name}/${name}.log" filePattern="/www/grinnow/app/log/${name}/${name}.%i.%d{yyyy-MM-dd}.log" append="true">
+	   <RollingFile name="file" fileName="/www/grintrader/homepage/log/${name}/${name}.log" filePattern="/www/grintrader/homepage/log/${name}/${name}.%i.%d{yyyy-MM-dd}.log" append="true">
 	   		<PatternLayout pattern="%d %5p [%c] %m%n" />
 	    	<Policies>
 	     		<SizeBasedTriggeringPolicy size="10MB" /><!-- 10MB 용량이 초과시 DefaultRolloverStrategy 정책만큼 넘버링 -->

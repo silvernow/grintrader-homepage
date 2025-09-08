@@ -60,49 +60,50 @@
                 <h2 class="headline font-strong text-3xl md:text-4xl mb-10">조경 비즈니스의 오늘과 내일,<br />그린트레이더 뉴스레터</h2>
             </div>
             <div class="mx-auto" data-fade="right" style="--dur:1.4s;--delay:.05s">
-            
-                <li>
-                    <a href="https://www.nbntv.kr/news/articleView.html?idxno=307802" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                        <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                            <div class="w-[80px] text-center">
-                                <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs rounded-full main-color text-white">뉴스기사</span>
-                            </div>
-                            <h3 class="text-slate-900 font-medium leading-snug text-sm sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                [인터뷰] “개발지 가치 있는 나무 살릴 방법… 투명한 수목 거래 필요”
-                            </h3>
-                            <time class="hidden sm:block text-sm text-slate-500">2023-11-24</time>
-                            <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                <span class="inline-flex items-center px-2 py-0.5 rounded-full main-color text-white">뉴스기사</span>
-                                <span aria-hidden="true">·</span>
-                                <time>2023-11-24</time>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            
-            
                 <ul class="mt-6 border border-slate-200 rounded-lg overflow-hidden divide-y divide-slate-200">
                 	<c:choose>
    						<c:when test="${fn:length(newsList) > 0}">
                    			<c:forEach var="detail" items="${newsList}" varStatus="status" >
-								<li>
-			                        <a href="<c:url value='${detail.pressLink}' />" target="_blank" class="group block px-4 sm:px-5 py-4 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-			                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-			                                <div class="w-[80px] text-center">
-			                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700"><c:out value='${detail.pressTyNm}' /></span>
-			                                </div>
-			                                <h3 class="text-slate-900 font-medium leading-snug text-sm sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-			                                    <c:out value='${detail.pressTitle}' />
-			                                </h3>
-			                                <time class="hidden sm:block text-sm text-slate-500"><c:out value='${detail.creDt}' /></time>
-			                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-			                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700"><c:out value='${detail.pressTyNm}' /></span>
-			                                    <span aria-hidden="true">·</span>
-			                                    <time>2025-04-25</time>
-			                                </div>
-			                            </div>
-			                        </a>
-			                    </li>                   			
+                   				<c:if test="${status.index < 3}">
+                   					<li>
+					                    <a href="<c:url value='${detail.pressLink}' />" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
+					                        <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
+					                            <div class="w-[80px] text-center">
+					                                <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs rounded-full main-color text-white"><c:out value='${detail.pressTyNm}' /></span>
+					                            </div>
+					                            <h3 class="text-slate-900 font-medium leading-snug text-sm sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
+					                                <c:out value='${detail.pressTitle}' />
+					                            </h3>
+					                            <time class="hidden sm:block text-sm text-slate-500"><c:out value='${detail.creDt}' /></time>
+					                            <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
+					                                <span class="inline-flex items-center px-2 py-0.5 rounded-full main-color text-white"><c:out value='${detail.pressTyNm}' /></span>
+					                                <span aria-hidden="true">·</span>
+					                                <time><c:out value='${detail.creDt}' /></time>
+					                            </div>
+					                        </div>
+					                    </a>
+					                </li>
+                   				</c:if>
+                   				<c:if test="${status.index >= 3}">
+                   					<li>
+				                        <a href="<c:url value='${detail.pressLink}' />" target="_blank" class="group block px-4 sm:px-5 py-4 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
+				                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
+				                                <div class="w-[80px] text-center">
+				                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700"><c:out value='${detail.pressTyNm}' /></span>
+				                                </div>
+				                                <h3 class="text-slate-900 font-medium leading-snug text-sm sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
+				                                    <c:out value='${detail.pressTitle}' />
+				                                </h3>
+				                                <time class="hidden sm:block text-sm text-slate-500"><c:out value='${detail.creDt}' /></time>
+				                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
+				                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700"><c:out value='${detail.pressTyNm}' /></span>
+				                                    <span aria-hidden="true">·</span>
+				                                    <time><c:out value='${detail.creDt}' /></time>
+				                                </div>
+				                            </div>
+				                        </a>
+				                    </li>   
+                   				</c:if>
                    			</c:forEach>
                    		</c:when>
                    		<c:otherwise>
