@@ -20,6 +20,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/sub.css">
 <link rel="icon" href="/images/favicon-24x24.png" type="image/x-icon" />
 <script type="text/javascript" src="/plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="/plugins/jquery/jquery-ui.js"></script>

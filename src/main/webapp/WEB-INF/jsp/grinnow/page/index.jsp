@@ -48,7 +48,7 @@
 	        <p class="text-sm md:text-xl mb-8 drop-in" data-anim>복잡한 수목 거래를 간편하고 투명하게,<br class="block lg:hidden"> 조경 비즈니스의 최적 파트너</p>
 	        <div class="flex flex-col sm:flex-row justify-center gap-4 stagger" style="--delay-base:.44s; --delay-step:.12s">
 	        	<a href="/page/intro" class="bg-white text-main-color font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 btn-pop"data-anim>회사소개</a>
-	            <a href="#services" class="border border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 hover:text-main-color transition duration-300 btn-pop" data-anim>사업영역</a>
+	            <a href="/page/business" class="border border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 hover:text-main-color transition duration-300 btn-pop" data-anim>사업영역</a>
 	        </div>
 	    </div>
 	    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -273,10 +273,11 @@
 		                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color focus:border-transparent"
 		                        placeholder="문의 내용을 입력해주세요"></textarea>
 		              	</div>
-		              	<div class="flex items-start gap-2">
-		               		<input id="cPrivacy" name="cPrivacy" type="checkbox" required class="mt-1 h-3 w-3 rounded border-gray-300 text-main-color focus:ring-main-color" />
-		               		<label for="cPrivacy" class="text-sm text-gray-600" >개인정보 수집 및 이용에 동의합니다.</label>
-		               		<span class="toggle-link" onclick="togglePolicy(event);">[내용 보기]</span>
+		              	<div>
+		              		<div class="flex items-center gap-2">
+              		       		<input id="cPrivacy" name="cPrivacy" type="checkbox" required class="h-4 w-4 rounded border-gray-300 text-main-color focus:ring-main-color" />
+		               			<label for="cPrivacy" class="mt-0.5 text-base text-gray-600" >개인정보 수집 및 이용에 동의합니다.</label>
+		              		</div>
 		               		<div class="policy-details" id="policyDetails">
 							   	[개인정보 수집·이용에 대한 동의]
 								

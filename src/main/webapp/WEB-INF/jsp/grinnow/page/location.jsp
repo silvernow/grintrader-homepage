@@ -79,7 +79,7 @@
                 </div>
             </div>
             <hr class="sep" />
-            <div id="map" style="width:100%;height:350px;"></div>
+            <div id="map" style="width:100%;height:350px;" data-fade="right" style="--dur:1.4s;--delay:.05s"></div>
         </div>
     </section>
     <jsp:include page="/WEB-INF/jsp/grinnow/include/footer.jsp" flush="false"></jsp:include>

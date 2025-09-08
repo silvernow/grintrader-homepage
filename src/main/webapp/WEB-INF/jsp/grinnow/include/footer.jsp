@@ -18,7 +18,7 @@
                 	<h4 class="text-sm font-semibold text-white uppercase mb-3">회사소개</h4>
                     <ul class="space-y-2 text-sm nav">
                     	<li>
-                          	<a href="#" class="hover:text-white">소개</a>
+                          	<a href="/page/intro" class="hover:text-white">소개</a>
                         </li>
                     </ul>
                 </div>
@@ -40,10 +40,10 @@
                 	<h4 class="text-sm font-semibold text-white uppercase mb-3">고객지원</h4>
                     <ul class="space-y-2 text-sm nav">
                     	<li>
-                        	<a href="#" class="hover:text-white">뉴스레터</a>
+                        	<a href="/page/newsletter" class="hover:text-white">뉴스레터</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-white">오시는길</a>
+                            <a href="/page/location" class="hover:text-white">오시는길</a>
                         </li>
                     </ul>
                 </div>
@@ -57,7 +57,7 @@
                 <a href="https://blog.naver.com/PostList.naver?blogId=grintraders" target="_blank" class="text-gray-400 duration-100 hover:text-white">
                     <i class="fas fa-blog"></i>
                 </a>
-                <a href="https://pf.kakao.com/_mkxkxgG" target="_blank" class="footer-icon kakao mt-[5px]"></a>
+                <a href="https://pf.kakao.com/_mkxkxgG" target="_blank" class="footer-icon kakao mt-[1px]"></a>
             </div>
             <p class="text-xs text-gray-500">&copy; 2025 (주)그린트레이더. All rights reserved.</p>
         </div>

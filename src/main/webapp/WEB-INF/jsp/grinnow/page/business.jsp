@@ -63,6 +63,7 @@
                             <div>
                                 <h2 class="text-3xl md:text-4xl font-black leading-tight">
                                     그린트레이더<br/>사업영역
+                                    
                                 </h2>
                                 <p class="mt-4 text-white/85 leading-relaxed">
                                     수목 시세·견적부터 재이식·재활용,<br>설계와 유지관리까지.<br><br>
@@ -138,7 +139,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <jsp:include page="/WEB-INF/jsp/grinnow/include/footer.jsp" flush="false"></jsp:include>

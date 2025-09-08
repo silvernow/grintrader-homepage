@@ -278,15 +278,6 @@
                         </a>
                     </li>
                 </ul>
-                <nav class="flex items-center justify-center gap-1.5 mt-10 select-none" aria-label="페이지네이션">
-                    <a href="#" class="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full text-slate-500 hover:bg-slate-100"><i class="fa-solid fa-angles-left text-xs"></i></a>
-                    <a href="#" class="inline-flex h-9 w-9 items-center justify-center rounded-full text-sm main-color text-white font-bold">1</a>
-                    <a href="#" class="inline-flex h-9 w-9 items-center justify-center rounded-full text-sm text-slate-700 hover:bg-slate-100">2</a>
-                    <a href="#" class="inline-flex h-9 w-9 items-center justify-center rounded-full text-sm text-slate-700 hover:bg-slate-100">3</a>
-                    <span class="inline-flex h-9 w-9 items-center justify-center text-slate-400"><i class="fa-solid fa-ellipsis text-xs"></i></span>
-                    <a href="#" class="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full text-sm text-slate-700 hover:bg-slate-100">10</a>
-                    <a href="#" class="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full text-slate-500 hover:bg-slate-100"><i class="fa-solid fa-angles-right text-xs"></i></a>
-                </nav>
             </div>
         </div>
     </section>
