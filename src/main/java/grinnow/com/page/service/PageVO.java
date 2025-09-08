@@ -35,9 +35,13 @@ public class PageVO extends ComDefaultVO implements Serializable {
 	/** 사용여부 */
 	private String useYn;
 	
+	/** 중요여부 */
+	private String impYn;
+	
 	/** 등록일시 */
 	private String creDt;
-
+	
+	
 	public String getPressId() {
 		return pressId;
 	}
@@ -116,5 +120,13 @@ public class PageVO extends ComDefaultVO implements Serializable {
 
 	public void setCreDt(String creDt) {
 		this.creDt = creDt;
+	}
+
+	public String getImpYn() {
+		return impYn;
+	}
+
+	public void setImpYn(String impYn) {
+		this.impYn = impYn;
 	}
 }

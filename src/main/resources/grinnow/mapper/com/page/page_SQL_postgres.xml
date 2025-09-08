@@ -10,6 +10,7 @@
 		<result property="pressTy" column="press_ty"/>
 		<result property="pressTyNm" column="press_ty_nm"/>
 		<result property="creDt" column="cre_dt"/>
+		<result property="impYn" column="imp_yn"/>
 	</resultMap> 
 
 	<!-- 뉴스레터 리스트 -->
@@ -20,6 +21,13 @@
 	         , a.press_ty
 	         , fn_code_nm(a.press_ty, 'COM022') AS press_ty_nm 
 		 	 , TO_CHAR(a.cre_dt, 'YYYY-MM-DD') AS cre_dt
+		 	 , CASE WHEN #{firstIndex} = 0 AND a.cre_dt IN (
+              		SELECT cre_dt
+              		  FROM tb_bbs_press
+              		 WHERE use_yn = 'Y'
+              		 ORDER BY cre_dt DESC
+              		 LIMIT 3
+           	   ) THEN 'Y' ELSE 'N' END AS imp_yn
 		  FROM tb_bbs_press a
 		 WHERE a.use_yn = 'Y'
  	     ORDER BY a.cre_dt DESC

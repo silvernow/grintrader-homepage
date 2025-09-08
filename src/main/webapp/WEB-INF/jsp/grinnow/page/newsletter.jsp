@@ -64,7 +64,7 @@
                 	<c:choose>
    						<c:when test="${fn:length(newsList) > 0}">
                    			<c:forEach var="detail" items="${newsList}" varStatus="status" >
-                   				<c:if test="${status.index < 3}">
+                   				<c:if test="${detail.impYn eq 'Y'}">
                    					<li>
 					                    <a href="<c:url value='${detail.pressLink}' />" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
 					                        <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
@@ -76,7 +76,7 @@
 					                            </h3>
 					                            <time class="hidden sm:block text-sm text-slate-500"><c:out value='${detail.creDt}' /></time>
 					                            <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-					                                <span class="inline-flex items-center px-2 py-0.5 rounded-full main-color text-white"><c:out value='${detail.pressTyNm}' /></span>
+					                                <span class="inline-flex items-center px-2 py-0.5 rounded-full main-color text-white"><c:out value='${detail.pressTyNm}' />${detail.impYn}</span>
 					                                <span aria-hidden="true">·</span>
 					                                <time><c:out value='${detail.creDt}' /></time>
 					                            </div>
@@ -84,7 +84,7 @@
 					                    </a>
 					                </li>
                    				</c:if>
-                   				<c:if test="${status.index >= 3}">
+                   				<c:if test="${detail.impYn ne 'Y'}">
                    					<li>
 				                        <a href="<c:url value='${detail.pressLink}' />" target="_blank" class="group block px-4 sm:px-5 py-4 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
 				                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
