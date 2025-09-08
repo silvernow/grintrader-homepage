@@ -55,7 +55,7 @@
         <div class="page-wrap">
             <div data-fade="left" style="--dur:1.4s;--delay:.05s">
                 <h2 class="headline font-strong text-3xl md:text-4xl">조경 비즈니스의 시작점,<br /> 그린트레이더 오시는 길 안내</h2>
-                <div class="h-[50px] w-[0.5px] bg-slate-500 my-8"></div>
+                <div class="h-[40px] w-[0.5px] bg-slate-500 my-8"></div>
             </div>
             <div class="info-grid">
                 <div data-fade="right" style="--dur:1.4s;--delay:.05s">
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <hr class="sep" />
-            <div id="map" style="width:100%;height:350px;" data-fade="right" style="--dur:1.4s;--delay:.05s"></div>
+            <div id="map" style="width:100%;height:350px;"></div>
         </div>
     </section>
     <jsp:include page="/WEB-INF/jsp/grinnow/include/footer.jsp" flush="false"></jsp:include>
