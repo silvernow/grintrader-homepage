@@ -19,39 +19,33 @@
             text-align: center;
             color: #333;
         }
-
         .notice {
             max-width: 360px;
             padding: 40px 20px;
         }
-
         .notice img {
             width: 80px;
             margin-bottom: 24px;
             opacity: 0.8;
         }
-
         .notice i {
             font-size: 80px;
             color: #1A68FF;
             margin-bottom: 24px;
             opacity: 0.9;
         }
-
         .notice h1 {
             font-size: 22px;
             font-weight: 700;
             margin-bottom: 16px;
             color: #333;
         }
-
         .notice p {
             font-size: 14px;
             color: #777;
             line-height: 1.6;
             margin-bottom: 24px;
         }
-
         .btn-home {
             display: inline-block;
             padding: 12px 24px;
@@ -63,7 +57,6 @@
             font-weight: 500;
             transition: background-color 0.3s ease;
         }
-
         .btn-home:hover {
             background-color: #155ad8;
         }

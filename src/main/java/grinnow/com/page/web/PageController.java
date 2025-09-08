@@ -27,7 +27,7 @@ import grinnow.com.page.service.PageVO;
 @Controller
 @RequestMapping(value="/page")
 public class PageController {
-
+	
 	@Resource(name = "gnnMessageSource")
 	private GnnMessageSource gnnMessageSource;
 	
@@ -118,5 +118,3 @@ public class PageController {
 		return resultMap;
 	}
 }
-
-

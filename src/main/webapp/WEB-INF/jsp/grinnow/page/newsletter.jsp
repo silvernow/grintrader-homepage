@@ -8,6 +8,8 @@
     <%@ include file="../include/include.jsp" %>
 </head>
 <body class="bg-white">
+	<form name="newsletterListForm" action ="<c:url value='/page/newsletter' />" method="post">
+	<input name="pageIndex" type="hidden" value="<c:out value='${searchVO.pageIndex}'/>"/>
     <nav id="navbar" class="navbar text-white fixed w-full z-50 border-b border-white/30">
         <div class="container mx-auto px-6 py-6">
             <div class="flex items-center justify-between">
@@ -59,229 +61,74 @@
             </div>
             <div class="mx-auto" data-fade="right" style="--dur:1.4s;--delay:.05s">
                 <ul class="mt-6 border border-slate-200 rounded-lg overflow-hidden divide-y divide-slate-200">
-                    <li>
-                        <a href="https://www.donga.com/news/article/all/20250425/131496554/1" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs rounded-full main-color text-white">뉴스기사</span>
-                                </div>
-                                <h3 class="text-slate-900 font-medium leading-snug text-sm sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [ICT이노베이션스퀘어확산사업] 그린트레이더 “오프라인 중심 조경수 시장의 디지털 전환 이끌 것”
-                                </h3>
-                                <time class="hidden sm:block text-sm text-slate-500">2025-04-25</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full main-color text-white">뉴스기사</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2025-04-25</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.naver.com/grintraders/223676851464" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs rounded-full main-color text-white">뉴스기사</span>
-                                </div>
-                                <h3 class="text-slate-900 font-medium leading-snug text-sm sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    리그린, 폐기 조경 수목 재활용 위한 수목 가치 평가 서비스 도입
-                                </h3>
-                                <time class="hidden sm:block text-sm text-slate-500">2024-11-20</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full main-color text-white">뉴스기사</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2024-11-20</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.nbntv.kr/news/articleView.html?idxno=307802" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs rounded-full main-color text-white">뉴스기사</span>
-                                </div>
-                                <h3 class="text-slate-900 font-medium leading-snug text-sm sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [인터뷰] “개발지 가치 있는 나무 살릴 방법… 투명한 수목 거래 필요”
-                                </h3>
-                                <time class="hidden sm:block text-sm text-slate-500">2023-11-24</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full main-color text-white">뉴스기사</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2023-11-24</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.naver.com/grintraders/223901036010" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                </div>
-                                <p class="text-slate-900 font-medium leading-snug text-sm font-strong sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [나무상식] 집에서 키우기 좋은 나무
-                                <span class="inline-block align-top text-[8px] font-strong text-blue-600">N</span>
-                                </p>
-                                <time class="hidden sm:block text-sm text-slate-500">2025-06-16</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2025-06-16</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.naver.com/grintraders/223870330668" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                </div>
-                                <p class="text-slate-900 font-medium leading-snug text-sm font-strong sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [나무상식] 뿌리, 줄기, 가지, 잎은 무슨 역할을 할까?
-                                <span class="inline-block align-top text-[8px] font-strong text-blue-600">N</span>
-                                </p>
-                                <time class="hidden sm:block text-sm text-slate-500">2025-05-19</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2025-05-19</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.naver.com/grintraders/223866709850" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                </div>
-                                <p class="text-slate-900 font-medium leading-snug text-sm font-strong sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [나무상식] 길거리 가로수에 숨은 비밀
-                                </p>
-                                <time class="hidden sm:block text-sm text-slate-500">2025-05-15</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2025-05-15</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.naver.com/grintraders/223688711922" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                </div>
-                                <p class="text-slate-900 font-medium leading-snug text-sm font-strong sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [나무상식] 수목 이식시 주의사항
-                                </p>
-                                <time class="hidden sm:block text-sm text-slate-500">2024-12-10</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2024-12-10</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.naver.com/grintraders/223688464212" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                </div>
-                                <p class="text-slate-900 font-medium leading-snug text-sm font-strong sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [나무상식] 나무 동해 예방 방법
-                                </p>
-                                <time class="hidden sm:block text-sm text-slate-500">2024-12-10</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2024-12-10</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.naver.com/grintraders/223683713787" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                </div>
-                                <p class="text-slate-900 font-medium leading-snug text-sm font-strong sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [나무지식] 탄소 중립과 나무의 역할
-                                </p>
-                                <time class="hidden sm:block text-sm text-slate-500">2024-12-05</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2024-12-05</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.naver.com/grintraders/223683465901" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                </div>
-                                <p class="text-slate-900 font-medium leading-snug text-sm font-strong sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [나무상식] 수목 고사 예방 방법
-                                </p>
-                                <time class="hidden sm:block text-sm text-slate-500">2024-12-05</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2024-12-05</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.naver.com/grintraders/223683411002" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                </div>
-                                <p class="text-slate-900 font-medium leading-snug text-sm font-strong sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [나무상식] 병충해 예방 방법
-                                </p>
-                                <time class="hidden sm:block text-sm text-slate-500">2024-12-05</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2024-12-05</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.naver.com/grintraders/223679704627" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 hover:bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
-                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
-                                <div class="w-[80px] text-center">
-                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                </div>
-                                <p class="text-slate-900 font-medium leading-snug text-sm font-strong sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
-                                    [나무상식] 삽목작업이란?
-                                </p>
-                                <time class="hidden sm:block text-sm text-slate-500">2024-12-02</time>
-                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full border border-slate-300 text-slate-700">나무상식</span>
-                                    <span aria-hidden="true">·</span>
-                                    <time>2024-12-02</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
+                	<c:choose>
+   						<c:when test="${fn:length(newsList) > 0}">
+                   			<c:forEach var="detail" items="${newsList}" varStatus="status" >
+								<li>
+			                        <a href="<c:url value='${detail.pressLink}' />" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
+			                            <div class="flex flex-col gap-2 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
+			                                <div class="w-[80px] text-center">
+			                                    <span class="hidden sm:inline-flex items-center px-2.5 py-1 text-xs rounded-full main-color text-white"><c:out value='${detail.pressTyNm}' /></span>
+			                                </div>
+			                                <h3 class="text-slate-900 font-medium leading-snug text-sm sm:truncate sm:whitespace-nowrap sm:overflow-ellipsis">
+			                                    <c:out value='${detail.pressTitle}' />
+			                                </h3>
+			                                <time class="hidden sm:block text-sm text-slate-500"><c:out value='${detail.creDt}' /></time>
+			                                <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
+			                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full main-color text-white"><c:out value='${detail.pressTyNm}' /></span>
+			                                    <span aria-hidden="true">·</span>
+			                                    <time>2025-04-25</time>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>                   			
+                   			</c:forEach>
+                   		</c:when>
+                   		<c:otherwise>
+                   			<li>
+			                	<a href="#a" target="_blank" class="group block px-4 sm:px-5 py-4 even:bg-slate-50 bg-slate-100/60 focus:bg-slate-100/60 focus:outline-none transition">
+			                    	<div class="flex items-center justify-center py-4">
+  										<h3 class="text-slate-900 font-medium leading-snug text-sm text-center">등록된 게시글이 없습니다.</h3>
+									</div>    
+			                	</a>
+			            	</li>
+                   		</c:otherwise>
+                   	</c:choose>
                 </ul>
             </div>
+            <div class="flex justify-center mt-6">
+			    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
+			    <c:if test="${paginationInfo.currentPageNo > 1}">
+			        <a href="javascript:linkPage(${paginationInfo.currentPageNo-1})"
+			        	class="px-3 py-1 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100">이전</a>
+			    </c:if>
+			    <c:forEach var="pageNo" begin="${paginationInfo.firstPageNoOnPageList}" end="${paginationInfo.lastPageNoOnPageList}">
+			        <c:choose>
+			        	<c:when test="${pageNo eq paginationInfo.currentPageNo}">
+			          		<span class="px-3 py-1 rounded-lg bg-blue-500 text-white font-bold">${pageNo}</span>
+			        	</c:when>
+			        	<c:otherwise>
+			          		<a href="javascript:linkPage(${pageNo})" class="px-3 py-1 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100">${pageNo}</a>
+			        	</c:otherwise>
+			      	</c:choose>
+			    </c:forEach>
+			    <c:if test="${paginationInfo.currentPageNo < paginationInfo.totalPageCount}">
+			    	<a href="javascript:linkPage(${paginationInfo.currentPageNo+1})"
+			            class="px-3 py-1 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100">다음</a>
+			    </c:if>
+			  	</nav>
+			</div>
         </div>
     </section>
  	<jsp:include page="/WEB-INF/jsp/grinnow/include/footer.jsp" flush="false"></jsp:include>
  	<script type="text/javascript" src="/js/common.js"></script>
+ 	<script>
+ 		function linkPage(pageNo){
+ 			document.newsletterListForm.pageIndex.value = pageNo;
+ 			document.newsletterListForm.action = "<c:url value='/page/newsletter'/>";
+ 	   		document.newsletterListForm.submit();
+ 		}
+ 	</script>
+	</form>
 </body>
 </html>

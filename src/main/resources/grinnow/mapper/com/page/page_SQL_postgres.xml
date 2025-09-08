@@ -17,14 +17,13 @@
  		SELECT a.press_id
 	         , a.press_title
 	         , a.press_link
-	         , a.a.press_ty
-	         , fn_code_nm(a.press_ty, 'COM022') AS a.press_ty_nm 
+	         , a.press_ty
+	         , fn_code_nm(a.press_ty, 'COM022') AS press_ty_nm 
 		 	 , TO_CHAR(a.cre_dt, 'YYYY-MM-DD') AS cre_dt
 		  FROM tb_bbs_press a
 		 WHERE a.use_yn = 'Y'
-		   AND a.system_cd = 'GRINTRADER'
- 		ORDER BY a.cre_dt DESC
-		LIMIT #{recordCountPerPage} OFFSET #{firstIndex}
+ 	     ORDER BY a.cre_dt DESC
+		 LIMIT #{recordCountPerPage} OFFSET #{firstIndex}
 	</select> 
 
 	<!-- 뉴스레터 리스트 총건수 -->
@@ -32,7 +31,6 @@
 		SELECT COUNT(*) AS totCnt
 		  FROM tb_bbs_press a
 		 WHERE a.use_yn = 'Y'
-		   AND a.system_cd = 'GRINTRADER'
 	</select>
 	
 	<!-- 회사홈페이지 문의등록 -->
