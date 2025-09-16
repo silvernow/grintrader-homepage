@@ -690,3 +690,7 @@ img { max-width: 100%; display: block; }
     font-size: 1rem;
   }
 }
+
+.touch-scroll {
+	-webkit-overflow-scrolling: touch;
+}

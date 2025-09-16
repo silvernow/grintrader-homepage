@@ -44,7 +44,7 @@
 	
 	<section id="home" class="hero flex items-center justify-center text-center text-white relative">
 		<div class="hero-content px-6 max-w-4xl mx-auto stagger" style="--delay-step:.22s">
-	    	<h1 class="text-xl md:text-5xl font-bold mb-6 leading-tight shine-once reveal-clip" data-anim>미래를 여는 <br class="block md:hidden"> 스마트 조경 유통 솔루션</h1>
+	    	<h1 class="text-lg md:text-5xl font-bold mb-6 leading-tight shine-once reveal-clip" data-anim>미래를 여는 <br class="block md:hidden"> 스마트 조경 유통 솔루션</h1>
 	        <p class="text-sm md:text-xl mb-8 drop-in" data-anim>복잡한 수목 거래를 간편하고 투명하게,<br class="block lg:hidden"> 조경 비즈니스의 최적 파트너</p>
 	        <div class="flex flex-col sm:flex-row justify-center gap-4 stagger" style="--delay-base:.44s; --delay-step:.12s">
 	        	<a href="/page/intro" class="bg-white text-main-color font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 btn-pop"data-anim>회사소개</a>
@@ -239,69 +239,66 @@
 	</section>
 	
 	<div id="contactModal" class="fixed inset-0 z-[1200] hidden">
-		<div id="contactModalBackdrop" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-200"></div>
-	   	<div class="absolute inset-0 flex items-center justify-center p-4">
-	       	<div id="contactModalPanel"
-	           	class="w-full max-w-lg bg-white rounded-2xl shadow-2xl opacity-0 scale-95 transition-all duration-200 focus:outline-none"
-	           	role="dialog" aria-modal="true" aria-labelledby="contactModalTitle" aria-describedby="contactModalDesc">
-	           	<div class="p-6 md:p-8">
-	           		<div class="flex items-start justify-between mb-4">
-	               		<h3 id="contactModalTitle" class="text-xl md:text-2xl font-bold text-main-color">문의하기</h3>
-	               		<button type="button" id="closeContactModal" class="text-gray-500 hover:text-gray-700 text-2xl leading-none" aria-label="닫기">&times;</button>
-	           		</div>
-	       			<p id="contactModalDesc" class="text-sm text-gray-500 mb-5">아래 정보를 작성해 주세요. 담당자가 확인 후 연락드립니다.</p>
-		       		<form name="contactForm" id="contactForm" method="post" onsubmit="return false;" class="space-y-4">
-	                	<div>
-		               		<label for="cName" class="block text-sm font-medium text-gray-700 mb-1">성명</label>
-		               		<input id="cName" name="cName" type="text" maxlength="20"
-		                       	class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color focus:border-transparent" placeholder="이름을 입력하세요">
-		               	</div>
-		               	<div>
-		               		<label for="cEmail" class="block text-sm font-medium text-gray-700 mb-1">이메일</label>
-		               		<input id="cEmail" name="cEmail" type="text" maxlength="100"
-		                       	class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color focus:border-transparent" placeholder="example@company.com">
-		               	</div>
-		               	<div>
-		               		<label for="cPhone" class="block text-sm font-medium text-gray-700 mb-1">휴대폰번호</label>
-		               		<input id="cPhone" name="cPhone" type="text" maxlength="20"
-		                       	class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color focus:border-transparent"
-		                       	placeholder="숫자만입력" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-		               	</div>
-		               	<div>
-		               		<label for="cMessage" class="block text-sm font-medium text-gray-700 mb-1">내용</label>
-		               		<textarea id="cMessage" name="cMessage" rows="5"
-		                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color focus:border-transparent"
-		                        placeholder="문의 내용을 입력해주세요"></textarea>
-		              	</div>
-		              	<div>
-		              		<div class="flex items-center gap-2">
-              		       		<input id="cPrivacy" name="cPrivacy" type="checkbox" required class="h-4 w-4 rounded border-gray-300 text-main-color focus:ring-main-color" />
-		               			<label for="cPrivacy" class="mt-0.5 text-base text-gray-600" >개인정보 수집 및 이용에 동의합니다.</label>
-		              		</div>
-		               		<div class="policy-details" id="policyDetails">
-							   	[개인정보 수집·이용에 대한 동의]
-								
-							   	1. 수집하는 개인정보 항목  
-							   	- 성명, 연락처 등 상담 및 서비스 제공에 필요한 정보
-								
-							   	2. 개인정보 수집·이용 목적  
-							   	- 수목 구매 및 조경 관련 업무 상담 및 서비스 제공
-								
-							   	3. 개인정보 보유·이용 기간  
-							   	- 수집일로부터 개인정보 수집·이용 목적이 달성될 때까지 보유·이용하며,  
-							     	    해당 목적 달성 시 지체 없이 파기합니다.  
-							  	- 단, 관계 법령에 따라 보존할 필요가 있는 경우 해당 법령에서 정한 기간 동안<br/> 보관합니다.
-								
-						    	4. 동의 거부 권리 및 불이익 안내  
-							   	- 귀하는 개인정보 수집·이용에 동의하지 않으실 수 있으며,  
-							  	이 경우 관련 상담 및 서비스 제공이 제한될 수 있습니다.
-						  	</div>
-		               	</div>
-		               	<button type="button" name="btnSend" id="btnSend" class="w-full main-color text-white font-bold py-3 px-6 rounded-lg hover:opacity-95 transition">문의 보내기</button>
-	           		</form>
-	           	</div>
-	       	</div>
-	    </div>
+	    <div id="contactModalBackdrop" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-200"></div>
+	    <div class="absolute inset-0 flex items-center justify-center p-4">
+		      <div
+		      id="contactModalPanel"
+		      class="w-full max-w-lg bg-white rounded-2xl shadow-2xl opacity-0 scale-95 transition-all duration-200 focus:outline-none overflow-hidden transform-gpu max-h-[90vh] md:max-h-[80vh]"
+		      role="dialog" aria-modal="true" aria-labelledby="contactModalTitle" aria-describedby="contactModalDesc">
+		        <div class="max-h-[90vh] md:max-h-[80vh] overflow-y-auto overscroll-contain touch-scroll">
+		            <div class="p-6 md:p-8">
+			            <div class="flex items-start justify-between mb-4">
+			            	<h3 id="contactModalTitle" class="text-xl md:text-2xl font-bold text-main-color">문의하기</h3>
+			            	<button type="button" id="closeContactModal" class="text-gray-500 hover:text-gray-700 text-2xl leading-none" aria-label="닫기">&times;</button>
+			            </div>
+		          		<p id="contactModalDesc" class="text-sm text-gray-500 mb-5">아래 정보를 작성해 주세요. 담당자가 확인 후 연락드립니다.</p>
+			            <form name="contactForm" id="contactForm" method="post" onsubmit="return false;" class="space-y-4">
+				            <div>
+				                <label for="cName" class="block text-sm font-medium text-gray-700 mb-1">성명</label>
+				                <input id="cName" name="cName" type="text" maxlength="20" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color focus:border-transparent" placeholder="이름을 입력하세요">
+				            </div>
+				            <div>
+				                <label for="cEmail" class="block text-sm font-medium text-gray-700 mb-1">이메일</label>
+				                <input id="cEmail" name="cEmail" type="text" maxlength="100" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color focus:border-transparent" placeholder="example@company.com">
+				            </div>
+				            <div>
+				                 <label for="cPhone" class="block text-sm font-medium text-gray-700 mb-1">휴대폰번호</label>
+				                 <input id="cPhone" name="cPhone" type="text" maxlength="20" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color focus:border-transparent" placeholder="숫자만입력" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+				            </div>
+				            <div>
+				                 <label for="cMessage" class="block text-sm font-medium text-gray-700 mb-1">내용</label>
+				                 <textarea id="cMessage" name="cMessage" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color focus:border-transparent" placeholder="문의 내용을 입력해주세요"></textarea>
+				            </div>
+				            <div>
+				              <div class="flex items-center gap-2">
+			                	  <input id="cPrivacy" name="cPrivacy" type="checkbox" required class="h-4 w-4 rounded border-gray-300 text-main-color focus:ring-main-color">
+				                  <label for="cPrivacy" class="mt-0.5 text-base text-gray-600">개인정보 수집 및 이용에 동의합니다.</label>
+				              </div>
+				              <div class="policy-details" id="policyDetails">
+				                [개인정보 수집·이용에 대한 동의]
+				
+				                1. 수집하는 개인정보 항목
+				                - 성명, 연락처 등 상담 및 서비스 제공에 필요한 정보
+				
+				                2. 개인정보 수집·이용 목적
+				                - 수목 구매 및 조경 관련 업무 상담 및 서비스 제공
+				
+				                3. 개인정보 보유·이용 기간
+				                - 수집일로부터 개인정보 수집·이용 목적이 달성될 때까지 보유·이용하며,
+				                	해당 목적 달성 시 지체 없이 파기합니다.
+				                - 단, 관계 법령에 따라 보존할 필요가 있는 경우 해당 법령에서 정한 기간 동안 보관합니다.
+				
+				                4. 동의 거부 권리 및 불이익 안내
+				                - 귀하는 개인정보 수집·이용에 동의하지 않으실 수 있으며,
+				               	 이 경우 관련 상담 및 서비스 제공이 제한될 수 있습니다.
+				              </div>
+				            </div>
+			           		<button type="button" name="btnSend" id="btnSend" class="w-full main-color text-white font-bold py-3 px-6 rounded-lg hover:opacity-95 transition">문의 보내기</button>
+			          	</form>
+		        	</div>
+		      	</div>
+	    	</div>
+	  </div>
 	</div>
 	<jsp:include page="/WEB-INF/jsp/grinnow/include/footer.jsp" flush="false"></jsp:include>
 	<script type="text/javascript" src="/js/common.js"></script>
