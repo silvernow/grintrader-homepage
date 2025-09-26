@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <title><%=application.getInitParameter("title") %></title>
+<meta name="naver-site-verification" content="8f5c0449ab61e4db5140f7ed818a7cdd30a13d72" />
 <meta name="description" content="그린트레이더는 수목 시세 정보 제공, 조경수 거래 중개, 조경 관리 서비스를 통해 고객의 조경 사업을 돕는 전문 플랫폼입니다.">
 <meta name="author" content="그린트레이더">
 <meta name="robots" content="index,follow">

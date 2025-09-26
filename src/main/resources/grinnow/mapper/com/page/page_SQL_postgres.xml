@@ -30,6 +30,7 @@
            	   ) THEN 'Y' ELSE 'N' END AS imp_yn
 		  FROM tb_bbs_press a
 		 WHERE a.use_yn = 'Y'
+		   AND a.system_cd = 'GRINTRADER'
  	     ORDER BY a.cre_dt DESC
 		 LIMIT #{recordCountPerPage} OFFSET #{firstIndex}
 	</select> 
@@ -39,6 +40,7 @@
 		SELECT COUNT(*) AS totCnt
 		  FROM tb_bbs_press a
 		 WHERE a.use_yn = 'Y'
+		   AND a.system_cd = 'GRINTRADER'
 	</select>
 	
 	<!-- 회사홈페이지 문의등록 -->

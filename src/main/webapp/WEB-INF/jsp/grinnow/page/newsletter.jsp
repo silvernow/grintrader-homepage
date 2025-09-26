@@ -76,7 +76,7 @@
 					                            </h3>
 					                            <time class="hidden sm:block text-sm text-slate-500"><c:out value='${detail.creDt}' /></time>
 					                            <div class="sm:hidden text-xs text-slate-500 flex items-center gap-2">
-					                                <span class="inline-flex items-center px-2 py-0.5 rounded-full main-color text-white"><c:out value='${detail.pressTyNm}' />${detail.impYn}</span>
+					                                <span class="inline-flex items-center px-2 py-0.5 rounded-full main-color text-white"><c:out value='${detail.pressTyNm}' /></span>
 					                                <span aria-hidden="true">·</span>
 					                                <time><c:out value='${detail.creDt}' /></time>
 					                            </div>
