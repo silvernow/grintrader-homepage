@@ -164,6 +164,11 @@
         </div>
     </section>
     <jsp:include page="/WEB-INF/jsp/grinnow/include/footer.jsp" flush="false"></jsp:include>
-    <script type="text/javascript" src="/js/common.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript" src="/plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/plugins/jquery/jquery-ui.js"></script>
+	<script type="text/javascript" src="/plugins/jquery/jquery.form.js"></script>
+	<script type="text/javascript" src="/js/util.js"></script>
+	<script type="text/javascript" src="/js/common.js"></script>
 </body>
 </html>
